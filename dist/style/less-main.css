@@ -1,0 +1,14 @@
+/*! 构建版本号：1.0.0, 构建时间： Tue Oct 04 2016 22:32:56 GMT+0800 (中国标准时间) */
+body {
+  background: #f938ab;
+}
+.box {
+  color: #fe33ac;
+  border-color: #fdcdea;
+}
+.box div {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=less-main.css.map*/

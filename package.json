@@ -1,50 +1,47 @@
 {
-  "name": "vue2-webpack-demo",
-  "version": "1.0.0",
-  "description": "this is a vue2 project repository.",
+  "name": "vue2.0-webpack",
+  "version": "0.0.1",
+  "description": "this is vue2 webpack project repository.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "del dist",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config build/webpack.dev.conf.js",
+    "build": "npm run clean && cross-env NODE_ENV=production webpack --config build/webpack.base.conf.js --progress",
+    "start": "node build/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/myxingke/vue2-webpack-demo.git"
+    "url": "https://github.com/myxingke/vue2-webpack-demo.git"
   },
-  "keywords": [
-    "vue2",
-    "webpack"
-  ],
-  "author": "myxingke@126.com",
+  "author": "Myxingke@126.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/myxingke/vue2-webpack-demo/issues"
   },
-  "homepage": "https://github.com/myxingke/vue2-webpack-demo#readme",
   "dependencies": {
-    "vue": "^2.0.0-rc.8",
-    "vuex": "^1.0.0-rc.2"
+    "vue": "^2.0.1",
+    "vue-router": "^2.0.0",
+    "vuex": "^2.0.0"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.0",
-    "babel-cli": "^6.16.0",
-    "babel-core": "^6.16.0",
+    "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
-    "babel-plugin-transform-runtime": "^6.15.0",
-    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-es2015": "^6.14.0",
     "babel-preset-stage-0": "^6.16.0",
-    "babel-runtime": "^6.11.6",
-    "browser-sync": "^2.16.0",
+    "browser-sync": "^2.17.0",
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.1",
     "html-webpack-plugin": "^2.22.0",
-    "vue-hot-reload-api": "^2.0.6",
-    "vue-html-loader": "^1.2.3",
-    "vue-loader": "^9.5.1",
-    "vue-style-loader": "^1.0.0",
-    "webpack": "^1.13.2",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
+    "vue-loader": "^9.5.0",
+    "webpack": "^2.1.0-beta.25",
     "webpack-dev-middleware": "^1.8.3",
     "webpack-dev-server": "^1.16.1",
-    "webpack-hot-middleware": "^2.12.2"
-  }
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack-merge": "^0.14.1"
+  },
+  "homepage": "https://www.yongchuan.cc"
 }
